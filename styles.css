@@ -124,6 +124,15 @@
 
 }
 
+@media (width:391px) {
+  .next-previous {
+  transform: translateY(325px);
+  }
+  .text-content{
+    transform: translateY(430px);
+  }
+}
+
 @media (width:425px) {
   .next-previous {
     transform: translateY(358px);
