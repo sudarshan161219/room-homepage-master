@@ -54,6 +54,11 @@ a{
     word-spacing: 5px;
 }
 
+
+.content{
+  position: relative;
+}
+
   .slider {
     position: absolute;
     right: 0;
@@ -121,13 +126,15 @@ a{
   
   .text{
     margin: 0 2rem;
+    display: grid;
+    grid-gap: 25px;
   
    
   }
 
   .text-content{
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 50px;
     transform: translateY(415px);
   }
 
