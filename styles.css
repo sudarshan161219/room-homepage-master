@@ -39,6 +39,7 @@
     height: 108px;
     justify-content: space-between;
     width: 50%;
+    z-index: 10;
 }
 
 span{
@@ -57,9 +58,25 @@ a{
 }
 
 
+ul {
+	list-style-type: none;
+  display: flex;
+}
+
+li {
+	margin: 0.8rem;
+ 
+  
+}
+
+.container{
+  position: relative;
+}
+
 .content{
   position: relative;
   height: 100vh;
+  /* height: 100%; */
 }
 
   .slider {
@@ -116,7 +133,7 @@ a{
   
   .next-previous {
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     display: flex;
     background-color: black;
     width: 105px;
@@ -196,4 +213,65 @@ a{
     letter-spacing: 5px;
     word-spacing: 6.5px;
 color: var(--color-Black);
+}
+
+.navigation {
+  display: flex;
+  left: 0;
+  position: fixed;
+  transform: translateY(-106px);
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-White);
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: space-between;
+  transition: all 0.3s linear;
+  z-index: 10;
+}
+
+.show-navigation{
+  transform: translateY(-3px);
+  transition: all 0.3s linear;
+}
+
+.close-logo{
+  margin-right: 1rem;
+}
+
+.list{
+  text-transform: lowercase;
+  /* font-size: 1rem; */
+  font-weight: 600;
+margin: 0;
+  letter-spacing: 0px;
+    word-spacing: 0px;
+}
+
+/* .background{
+  position: absolute ;
+  height: 100vh;
+  width: 100%;
+  background-color:var(--color-Black);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+} */
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	background-color: hsla(0, 0%, 0%, 0.753);
+  display: none;
+}
+
+.show-background {
+	display: block;
+
 }

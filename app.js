@@ -9,8 +9,10 @@ const img = document.querySelectorAll('.product-img');
 const heading = document.querySelector('.heading-one');
 const paragraph = document.querySelector('.paragraph-one');
 
-
-
+const nav = document.querySelector('.menu');
+const menu = document.querySelector('.navigation')
+const close = document.querySelector('.close');
+const background = document.querySelector('.background')
 
 
 slides.forEach(function (slide, index) {
@@ -88,3 +90,13 @@ function carousel() {
          experience in this industry, we understand what customers want for their home and office.`
         }
    }
+
+   nav.addEventListener("click" ,  function() {
+      menu.classList.add('show-navigation');
+      background.classList.add('show-background');
+      close.addEventListener("click", function(){
+         menu.classList.remove('show-navigation');
+         background.classList.remove('show-background');
+      })
+
+   })
