@@ -155,6 +155,7 @@ li {
     display: grid;
     grid-gap: 50px;
     transform: translateY(415px);
+    height: 100vh;
   }
 
   .heading-one{
@@ -248,17 +249,7 @@ margin: 0;
     word-spacing: 0px;
 }
 
-/* .background{
-  position: absolute ;
-  height: 100vh;
-  width: 100%;
-  background-color:var(--color-Black);
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 5;
-} */
+
 
 .background {
 	position: absolute;
